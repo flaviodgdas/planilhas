@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0:rgb(158, 241, 155);
+    --cor1:rgb(116, 235, 105);
+    --cor2:rgb(64, 230, 58);
+    --cor3:rgb(22, 194, 22);
+    --cor4:rgb(7, 109, 24);
+    --cor5:rgb(3, 68, 6);
+
+    --fonte-padrao: Arial, verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', sans-serif;
+    --fonte-android: 'Android', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    padding-left: 100px;
+}
+header h1 {
+    color: var(--cor0);
+}
+header p {
+    color: var(--cor0);
+}
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.541);
+  
+}
+nav > a {    
+    color: var(--cor1);/*menu*/
+    padding-left: 50px;
+    padding: 3px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+nav > a:hover {/*menu botao mudar cor*/
+    background-color: var(--cor3);
+    color: var(--cor5);
+    margin: auto;
+}
+main {
+    background-color: var(--cor4);
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+main h1 {
+    color: var(--cor5);
+    text-align: center;
+}
+article {
+    background-color: var(--cor1);
+}
+aside {
+    background-color: var(--cor0);
+}
+footer {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+}
+footer {
+    color: var(--cor0);
+    text-align: center;
+}
